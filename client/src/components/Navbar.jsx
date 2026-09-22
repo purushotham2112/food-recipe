@@ -98,7 +98,6 @@ export default function Navbar() {
               Chefs
             </Link>
 
-            {/* AI Menu Dropdown / Direct Link */}
             <Link
               to="/ai/recipe-generator"
               className="px-3 py-2 rounded-lg text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1.5 hover:bg-amber-50 dark:hover:bg-amber-950/30 transition-colors"

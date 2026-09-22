@@ -18,8 +18,6 @@ import ChefProfilePage from './pages/ChefProfilePage';
 import AIRecipeGenerator from './pages/AIRecipeGenerator';
 import AIFridgeAssistant from './pages/AIFridgeAssistant';
 import CookingMode from './pages/CookingMode';
-import VoiceAssistantPage from './pages/VoiceAssistantPage';
-import VoiceSettingsPage from './pages/VoiceSettingsPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
@@ -65,8 +63,6 @@ export default function App() {
             <Route path="chefs/:id" element={<ChefProfilePage />} />
             <Route path="ai/recipe-generator" element={<AIRecipeGenerator />} />
             <Route path="ai/fridge" element={<AIFridgeAssistant />} />
-            <Route path="voice-assistant" element={<VoiceAssistantPage />} />
-            <Route path="settings/voice" element={<VoiceSettingsPage />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
 

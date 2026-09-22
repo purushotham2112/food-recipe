@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, X, Play, RotateCcw, Volume2 } from 'lucide-react';
 import CookingTimer from '../components/CookingTimer';
-import VoiceCookingControl from '../components/VoiceCookingControl';
 import { getRecipeById } from '../services/recipeService';
 
 export default function CookingMode() {
@@ -88,13 +87,7 @@ export default function CookingMode() {
           </div>
         </div>
 
-        {/* Voice Control & Progress */}
         <div className="flex items-center gap-4">
-          <VoiceCookingControl
-            onNext={handleNext}
-            onPrevious={handlePrevious}
-            onRepeat={speakCurrentStep}
-          />
           <span className="font-black text-amber-400 text-sm">
             STEP {currentStepIdx + 1} / {steps.length}
           </span>

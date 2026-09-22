@@ -57,7 +57,6 @@ app.use('/api/meal-plans', require('./routes/mealPlanRoutes'));
 app.use('/api/shopping-list', require('./routes/shoppingRoutes'));
 app.use('/api/pantry', require('./routes/pantryRoutes'));
 app.use('/api/ai', require('./routes/aiRoutes'));
-app.use('/api/voice', require('./routes/voiceRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 

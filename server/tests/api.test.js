@@ -92,13 +92,6 @@ async function runTests() {
       // 8. Shopping List Test
       const shopping = await makeRequest('/shopping-list', 'GET', null, token);
       console.log(`[PASS] GET /api/shopping-list (Protected) - Status: ${shopping.status}`);
-
-      // 9. Voice Command API Test
-      const voiceCmd = await makeRequest('/voice/command', 'POST', {
-        transcript: 'find easy chicken recipes',
-        context: { page: '/explore' }
-      }, token);
-      console.log(`[PASS] POST /api/voice/command - Status: ${voiceCmd.status} (Intent: ${voiceCmd.body.intent})`);
     } else {
       console.log(`[INFO] Demo user login skipped (Run 'npm run seed' to populate test accounts)`);
     }
